@@ -13,6 +13,11 @@
 int hp = 200;
 float f1 = 10.5f;   // float형에는 f를 써야 float형으로 인식
 double d1 = 10.5;   // f 안쓰면 double형으로 인식
+bool isTrue = true;
+bool isFalse = false;
+char ch1 = 'A';
+char ch2 = '\n';
+string s = "Hello world";
 ```
 
 <br/>
@@ -38,12 +43,56 @@ else
 
 <br/>
 
+#### switch
+
+```c#
+char ch = 'F';
+
+switch(ch)
+{
+    case 'M':
+        Console.WriteLine("남성");
+        break;
+    case 'F':
+        Console.WriteLine("여성");
+        break;
+    default:
+        Console.WriteLine("알 수 없음");
+        break;
+}
+```
+
+<br/>
+
 #### 반복문
 
 ```c#
 for (int i = 0; i <= 10; i++)
 {
   Debug.Log(i);
+}
+```
+
+```c#
+int[] arr = new int[]{1, 2, 3, 4, 5};
+
+foreach (int elem in arr)
+{
+    Console.WriteLine(elem);
+}
+```
+
+```c#
+int sum = 0;
+int n = 1;
+
+while (n <= 100)
+{
+    if (n % 2 == 0)
+    {
+        sum += n;
+    }
+    n ++;
 }
 ```
 
@@ -67,6 +116,25 @@ float avg = sum / arr3.Length;
 // C#에서 정수끼리 나눗셈을 하면 소수점 이하가 버려져 정수가 됨
 // 소수점까지 저장하고 싶으면 처음에 1.0f를 넣어줘야함
 // float avg = 1.0f * sum / arr3.Length;
+```
+
+```c#
+// 다차원 배열
+// ,를 사용
+int[,] arr1 = new int[10, 5];   // 10행 5열의 2차원 배열
+int[,,] arr2 = new int[4, 5, 6];   // 5행 6열 배열이 4개있는 3차원 배열
+int[,] arr3 = new int[2, 3]{{1, 2, 3}, {4, 5, 6}};
+```
+
+```c#
+// 가변 배열
+// 배열의 배열로 배열의 요소가 임의 크기의 배열
+int[][] arr = new int[5][];
+arr[0] = new int[10];
+arr[1] = new int[9];
+arr[2] = new int[8];
+arr[3] = new int[7];
+arr[4] = new int[6];
 ```
 
 <br/>
