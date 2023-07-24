@@ -1,19 +1,5 @@
 files/
-Roulette/.utmp/
-Roulette/Library/
-Roulette/Logs/
-Roulette/Packages/
-Roulette/ProjectSettings/
-Roulette/Roulette_Android_BurstDebugInformation_DoNotShip/
-Roulette/UserSettings/
-Roulette/Roulette_Android.apk
-Player Control/Library
-Player Control/Logs
-Player Control/obj
-Player Control/Packages
-Player Control/ProjectSettings
-Player Control/Temp
-Player Control/.vsconfig
-Player Control/Assembly-CSharp
-Player Control/Player Control.sln
-Player Control/UserSettings
+Roulette/*
+!Roulette/Assets
+Player Control
+!Player Control/Assets
