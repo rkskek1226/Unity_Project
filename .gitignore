@@ -1,5 +1,7 @@
 files/
 Roulette/*
 !Roulette/Assets
-Player Control
+Player Control/*
 !Player Control/Assets
+Plane Programming/*
+!Plane Programming/Assets
