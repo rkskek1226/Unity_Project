@@ -22,9 +22,13 @@ public class PlayerControllerX : MonoBehaviour
         verticalInput *= -1;
 
         // move the plane forward at a constant rate
+        // Rigidbody rb = GetComponent<Rigidbody>();
+        // rb.velocity = transform.forward* speed;
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
         // tilt the plane up/down based on up/down arrow keys
         transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime * verticalInput);
     }
+
+    
 }
