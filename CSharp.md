@@ -1,5 +1,4 @@
 #### 데이터 타입
-
 | 데이터형 이름 | 설명        | 값의 범위                                    |
 | ------- | --------- | ---------------------------------------- |
 | int     | 정수형       | -2147483648 ~ 2147483647                 |
@@ -8,7 +7,6 @@
 | bool    | 불형        | true 또는 false                            |
 | char    | 문자형       | 텍스트로 사용되는 유니코드 기호                        |
 | string  | 문자열형      | 텍스트                                      |
-
 ```c#
 int hp = 200;
 float f1 = 10.5f;   // float형에는 f를 써야 float형으로 인식
@@ -23,7 +21,6 @@ string s = "Hello world";
 <br/>
 
 #### 조건문
-
 ```c#
 int hp = 200;
 
@@ -44,7 +41,6 @@ else
 <br/>
 
 #### switch
-
 ```c#
 char ch = 'F';
 
@@ -65,14 +61,12 @@ switch(ch)
 <br/>
 
 #### 반복문
-
 ```c#
 for (int i = 0; i <= 10; i++)
 {
   Debug.Log(i);
 }
 ```
-
 ```c#
 int[] arr = new int[]{1, 2, 3, 4, 5};
 
@@ -81,7 +75,6 @@ foreach (int elem in arr)
     Console.WriteLine(elem);
 }
 ```
-
 ```c#
 int sum = 0;
 int n = 1;
@@ -99,7 +92,6 @@ while (n <= 100)
 <br/>
 
 #### 배열
-
 ```c#
 int[] arr1;
 int[] arr2 = new int[5];
@@ -117,7 +109,6 @@ float avg = sum / arr3.Length;
 // 소수점까지 저장하고 싶으면 처음에 1.0f를 넣어줘야함
 // float avg = 1.0f * sum / arr3.Length;
 ```
-
 ```c#
 // 다차원 배열
 // ,를 사용
@@ -125,7 +116,6 @@ int[,] arr1 = new int[10, 5];   // 10행 5열의 2차원 배열
 int[,,] arr2 = new int[4, 5, 6];   // 5행 6열 배열이 4개있는 3차원 배열
 int[,] arr3 = new int[2, 3]{{1, 2, 3}, {4, 5, 6}};
 ```
-
 ```c#
 // 가변 배열
 // 배열의 배열로 배열의 요소가 임의 크기의 배열
@@ -140,7 +130,6 @@ arr[4] = new int[6];
 <br/>
 
 #### 메소드
-
 ```c#
 void Hello()
 {
@@ -159,7 +148,6 @@ Test("Good");
 <br/>
 
 #### 클래스
-
 ```c#
 public class Player
 {
@@ -194,11 +182,8 @@ public class Test : MonoBehaviour
 <br/>
 
 #### Vector 클래스
-
 * Vector3 클래스
-
-* * 3D 게임에서 사용하는 float형 x, y, z값을 사용하는 클래스
-
+  * 3D 게임에서 사용하는 float형 x, y, z값을 사용하는 클래스
   ```c#
   class Vector3
   {
@@ -209,8 +194,7 @@ public class Test : MonoBehaviour
   ```
 
 * Vector2 클래스
-
-* * 2D 게임에서 사용하는 float형 x, y값을 사용하는 클래스
+  * 2D 게임에서 사용하는 float형 x, y값을 사용하는 클래스
 
   ```c#
   class Vector2
@@ -219,9 +203,7 @@ public class Test : MonoBehaviour
     public float y;
   }
   ```
-
 * 좌표와 벡터 모두 사용할 수 있으며 x = 3, y = 5를 좌표로 사용하면 오브젝트가 (3, 5)에 배치되었다는 의미이고 벡터로 사용하면 x축으로 3, y축으로 5 움직였다는 의미
-
 ```c#
 Vector2 playerPos = new Vector2(3.0f, 4.0f);
 playerPos.x += 8.0f;
