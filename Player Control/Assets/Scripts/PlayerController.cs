@@ -23,8 +23,7 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");   // ªÛ«œ ≈∞
 
         // Move the vehicle forward
-        // transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
         // Turn the vehicle
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
