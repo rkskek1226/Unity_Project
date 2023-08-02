@@ -25,16 +25,16 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomAnimal()
     {
         int animalIdx1 = Random.Range(0, animalPrefabs.Length);
-        // int animalIdx2 = Random.Range(0, animalPrefabs.Length);
-        // int animalIdx3 = Random.Range(0, animalPrefabs.Length);
+        //int animalIdx2 = Random.Range(0, animalPrefabs.Length);
+        //int animalIdx3 = Random.Range(0, animalPrefabs.Length);
 
         Vector3 spawnFromTopPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-        // Vector3 spawnFromLeftPos = new Vector3(-spawnRangeX, 0, Random.Range(0, spawnPosZ));
-        // Vector3 spawnFromRightPos = new Vector3(spawnRangeX, 0, Random.Range(0, spawnPosZ));
+        //Vector3 spawnFromLeftPos = new Vector3(-spawnRangeX, 0, Random.Range(0, spawnPosZ));
+        //Vector3 spawnFromRightPos = new Vector3(spawnRangeX, 0, Random.Range(0, spawnPosZ));
 
         Instantiate(animalPrefabs[animalIdx1], spawnFromTopPos, animalPrefabs[animalIdx1].transform.rotation);
-        // Instantiate(animalPrefabs[animalIdx2], spawnFromLeftPos, Quaternion.Euler(0f, 90f, 0f));
-        // Instantiate(animalPrefabs[animalIdx3], spawnFromRightPos, Quaternion.Euler(0f, 270f, 0f));
+        //Instantiate(animalPrefabs[animalIdx2], spawnFromLeftPos, Quaternion.Euler(0f, 90f, 0f));
+        //Instantiate(animalPrefabs[animalIdx3], spawnFromRightPos, Quaternion.Euler(0f, 270f, 0f));
     }
 }
 

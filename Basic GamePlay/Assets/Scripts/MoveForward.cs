@@ -15,6 +15,7 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //충돌 있을 시에는 Rigidbody 추천
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
