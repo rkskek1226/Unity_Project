@@ -9,20 +9,20 @@
   1. Resources 폴더에서 가져오는 방법
     * 가져오고자 하는 프리팹이 프로젝트 뷰에서 Assets/Resources 폴더안에 있어야함
     * Resources 폴어에 있는 파일들은 게임이 실행되면 무조건 메모리에 적재되기 때문에 필요한 에셋들만 Resources에 넣어두는 것이 좋음
-    ```
-    var boxPrefab = Resources.Load<BlackBoX>("Black Box");
-    Instantiate(boxPrefab;)
-    ```
+      ```
+      var boxPrefab = Resources.Load<BlackBoX>("Black Box");
+      Instantiate(boxPrefab;)
+      ```
   2. 컴포넌트의 프로퍼티로 참조하는 방법
     * Scene에 배치된 게임 오브젝트에 부착된 컴포넌트의 프로퍼티로 프리팹 원본을 참조
-    ```
-    private GameObject boxPrefab;
-
-    private void Start()
-    {
-        Instantiate(boxPrefab);
-    }
-    ```
+      ```
+      private GameObject boxPrefab;
+  
+      private void Start()
+      {
+          Instantiate(boxPrefab);
+      }
+      ```
 
 <br/>
 
@@ -56,12 +56,16 @@
 #### 스크립트에서 게임 오브젝트 찾는 방법
 1. 이름으로 찾는 방법
    * 오브젝트들이 많아지면 전체 오브젝트들을 탐색하므로 성능상 불리함
-   * target = GameObject.Find("GameObject Name");
+     ```
+     target = GameObject.Find("GameObject Name");
+     ```
 2. 태그(Tag)로 찾는 방법
-   * 오브젝트에 태그를 먼저 달아야 함(Add Tag)
-   * == 연산자는 사용하지 않는 것이 좋음(메모리 효율상 별로)
-   * target = GameObject.FindGameObjectWithTag("Tag Name");
-   * if (gameObject.CompareTag("Tag Name")) {}
+    * 오브젝트에 태그를 먼저 달아야 함(Add Tag)
+    * == 연산자는 사용하지 않는 것이 좋음(메모리 효율상 별로)
+      ```
+      target = GameObject.FindGameObjectWithTag("Tag Name");
+      if (gameObject.CompareTag("Tag Name")) {}
+      ```
 
 <br/>
 
