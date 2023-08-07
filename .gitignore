@@ -1,20 +1,37 @@
 files/
+
 Roulette/*
 !Roulette/Assets
+
 Player Control/*
 !Player Control/Assets
+
 Plane Programming/*
 !Plane Programming/Assets
+
 Basic GamePlay/*
 !Basic GamePlay/Assets
+
 Personal Project/*
-!Personal Project/Assets
-!Personal Project/Backups
-Play Fetch
-!Play Fetch/Assets
-Sound And Effects
-!Sound And Effects/Assets
-Balloons, Bombs, & Booleans
-!Balloons, Bombs, & Booleans/Assets
+# !Personal Project/Assets
+# !Personal Project/Backups
+
+Soccer Scripting/*
+!Soccer Scripting/Assets
+
+Play Fetch/*
+# !Play Fetch/Assets
+
+Sound And Effects/*
+# !Sound And Effects/Assets
+
+Balloons, Bombs, & Booleans/*
+# !Balloons, Bombs, & Booleans/Assets
+
+Gameplay Mechanics/*
+# !Gameplay Mechanics/Assets
+
+User Interface/*
+# !User Interface/Assets
 
 
