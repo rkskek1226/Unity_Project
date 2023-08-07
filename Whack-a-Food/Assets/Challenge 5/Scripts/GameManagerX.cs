@@ -52,7 +52,6 @@ public class GameManagerX : MonoBehaviour
 
     IEnumerator Timer()
     {
-        Debug.Log("qwe");
         float time = 60;
         while (time > 0)
         {
@@ -60,7 +59,6 @@ public class GameManagerX : MonoBehaviour
             timerText.text = "Timer : " + time.ToString();
             yield return null;
         }
-
         GameOver();
     }
 
