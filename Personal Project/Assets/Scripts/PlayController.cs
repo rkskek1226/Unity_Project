@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayController : MonoBehaviour
 {
-    private float speed = 40f;
+    private float speed = 20f;
     private float horizontalInput;
     private float verticalInput;
     private float zBound = 6;
@@ -22,6 +22,7 @@ public class PlayController : MonoBehaviour
     {
         MovePlayer();
         ConstraintPlayerPosition();
+        Debug.Log(transform.position);
     }
 
     // Moves the player based on arrow key input
@@ -45,6 +46,7 @@ public class PlayController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
         }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
