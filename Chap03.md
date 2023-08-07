@@ -32,13 +32,15 @@ private Rigidbody playerRb = GetComponent<Rigidbody>();
 * 물리와 관련된 함수들이 미리 들어있는 함수 집합
 * physics.gravity = 10;   // 중력 가속도 상수 벡터를 변경한다는 의미
 
+<br/>
+
 #### 플레이어가 오른쪽으로 계속해서 이동하는 느낌 주는 방법(쿠키런)
 * 왼쪽으로 이동하는 스크립트 만들고 배경과 특정 오브젝트들에 적용
 * 배경이 특정 범위를 넘어갈 때 배경의 transform.position에 배경의 시작 위치를 대입하면 끊임없이 이어지는 연출이 가능
 
 <br/>
 
-#### Rigidbpdy 컴포넌트 Constraints
+#### Rigidbody 컴포넌트 Constraints
 * 특정 축(x, y, z축)을 기준으로 회전이나 위치를 고정하는 기능
 * Constraints를 설정함으로써 캐릭터가 특정 지형에 따라 물리 효과를 받아도 넘어지지 않음(만약 Constraints를 설정하지 않았다면 무엇인가를 밟는 순간 넘어짐)
 * Inspector창에서 설정 가능하지만 스크립트에서도 설정 가능
