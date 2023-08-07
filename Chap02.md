@@ -57,7 +57,8 @@
 1. 이름으로 찾는 방법
    * 오브젝트들이 많아지면 전체 오브젝트들을 탐색하므로 성능상 불리함
      ```
-     target = GameObject.Find("GameObject Name");
+     target1 = GameObject.Find("GameObject Name");
+     target2 = GameObject.FindObjectOfType("Script Name");
      ```
 2. 태그(Tag)로 찾는 방법
     * 오브젝트에 태그를 먼저 달아야 함(Add Tag)
