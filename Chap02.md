@@ -1,5 +1,4 @@
 #### Prefab
-
 * 특정 게임 오브젝트를 재사용해야하는 경우(NPC나 발사체, 나무같은 환경 에셋) 프리팹을 사용하면 효율적
 * 프로젝트 뷰에 존재하는 프리팹 원본은 에셋 상태로 이를 그대로 Scene에서 보거나 사용할 수 없기 때문에 Instantiate()를 통해 인스턴스화 해야함
 * 프리팹으로부터 원하는 만큼의 프리팹 인스턴스를 생성할 수 있고 생성된 프리팹 인스턴스는 각각 독립적으로 동작
@@ -55,18 +54,18 @@
 
 #### 스크립트에서 게임 오브젝트 찾는 방법
 1. 이름으로 찾는 방법
-   * 오브젝트들이 많아지면 전체 오브젝트들을 탐색하므로 성능상 불리함
-     ```
-     target1 = GameObject.Find("GameObject Name");
-     target2 = GameObject.FindObjectOfType("Script Name");
-     ```
+  * 오브젝트들이 많아지면 전체 오브젝트들을 탐색하므로 성능상 불리함
+    ```
+    target1 = GameObject.Find("GameObject Name");
+    target2 = GameObject.FindObjectOfType("Script Name");
+    ```
 2. 태그(Tag)로 찾는 방법
-    * 오브젝트에 태그를 먼저 달아야 함(Add Tag)
-    * == 연산자는 사용하지 않는 것이 좋음(메모리 효율상 별로)
-      ```
-      target = GameObject.FindGameObjectWithTag("Tag Name");
-      if (gameObject.CompareTag("Tag Name")) {}
-      ```
+  * 오브젝트에 태그를 먼저 달아야 함(Add Tag)
+  * == 연산자는 사용하지 않는 것이 좋음(메모리 효율상 별로)
+    ```
+    target = GameObject.FindGameObjectWithTag("Tag Name");
+    if (gameObject.CompareTag("Tag Name")) {}
+    ```
 
 <br/>
 
